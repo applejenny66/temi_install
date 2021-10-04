@@ -20,3 +20,38 @@ Please refer to the link to clone or install pytemi:
 ## build up the java environment
 Because pytemi is not very powerful now, we need to write some java or kotlin codes to get more information from temi.
 Here we choose java instead of kotlin.
+
+step 1. go to the official website to download a version. <https://www.java.com/zh-TW/download/linux_manual.jsp>
+ e.g. I use Linux x64
+
+step 2. install it refer the this page. <https://www.java.com/zh-TW/download/help/linux_install.html>
+e.g.  (java_name = java_download_file)
+$: `sudo mkdir /usr/java`
+$: `sudo cd /usr/java `
+$: `sudo mv ~/Download/java_name .`
+$: `sudo tar zxvf java_name`
+$: `sudo rm -rf java_name`
+
+step 3. go to download Eclipse <https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2021-09/R/eclipse-inst-jre-linux64.tar.gz>
+
+step 4. extract the Eclipse
+e.g. 
+$: `cd ~`
+$: `mv ./Download/eclipse_name .`
+$: `tar -xzvf eclipse_name`
+
+step 5. install by clicking the extracted file
+e.g. I get a dir name "eclipse-installer". Direct click the dir and click the "eclipse-inst". 
+Just follow the hints and launch it.
+
+step 6. install Android ADT
+e.g. After launching the eclipse, you can find "Help" on the top.
+click Help > Install New Software > Add > location: https://dl-ssl.google.com/android/eclipse/ > Select All > Add > Install anyway
+
+step 7. go to download "Andriod SDK" <https://developer.android.com/studio>
+
+step 8. install Android SDK
+e.g.
+$: `cd ~`
+$: `mv ./Download/android-studio-xxx.tar.gz .`
+$: `tar -xzvf android-studio-xxx.tar.gz`
