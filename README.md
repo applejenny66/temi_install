@@ -50,8 +50,19 @@ click Help > Install New Software > Add > location: https://dl-ssl.google.com/an
 
 step 7. go to download "Andriod SDK" <https://developer.android.com/studio>
 
-step 8. install Android SDK
+step 8. extract Android SDK
 e.g.
 $: `cd ~`
 $: `mv ./Download/android-studio-xxx.tar.gz .`
 $: `tar -xzvf android-studio-xxx.tar.gz`
+
+step 9. reboot your computer
+e.g. $:`sudo reboot`
+
+step 10. restart your eclipse and install Android SDK Build-tools
+e.g.
+click the eclipse icon to open it, then you will be reminded that the "Android SDK Build-tools is not installed".
+Just follow the hints to complete the installation.
+This step will take more time. Please wait a minute.
+
+congratulate! You finish the java installation.
