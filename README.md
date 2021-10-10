@@ -14,6 +14,29 @@ $: `python3 -m venv temi-env`
 $: `source temi-env/bin/activate`
 to activate your virtual env
 
+## Mosquitto install (MQTT)
+To use pytemi, we use tools “mosquitto” to help us.  
+First, we’d like to make sure the version of mosquitto, so we remove all related to make the environment clear.  
+
+e.g.  
+$: `sudo apt-get purge --remove mosquitto*` (remove mosquitto, mosquitto-clients, mosquitto-dev)  
+$: `sudo apt-add-repository --remove ppa:mosquitto-dev/mosquitto-ppa` (remove repository type)   
+
+Then, follow the link: <https://www.arubacloud.com/tutorial/how-to-install-and-secure-mosquitto-on-ubuntu-20-04.aspx>  
+
+$: `sudo apt update -y && sudo apt install mosquitto mosquitto-clients -y`  
+$: `sudo systemctl status mosquitto`  
+$: `sudo systemctl enable mosquitto`  
+$: `sudo systemctl start mosquitto`  
+
+When you check the status,  
+- if you see "activate", you are successful!  
+- if you see "failed", I just reboot my computer to solve this problem.   
+
+Also, to subscribe to a topic, respect the following syntax:  
+$: `mosquitto_sub -h address -t topic`  
+
+
 ## Use pytemi to manipulate temi
 Please refer to the link to clone or install pytemi:  
 <https://github.com/applejenny66/pytemi>  
